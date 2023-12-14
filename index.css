@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	box-sizing: border-box; /* Agregado para incluir el padding y el borde en el ancho y alto total */
+	font-family: 'Roboto', sans-serif;
+}
+
+/* nav */
+
+.nav-container{
+	display: flex;
+	background-color: #dcceb1;
+	height: 100px;
+}
+
+.nav {
+	margin: auto;
+	width: 90%;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+
+.nav ul li {
+	padding: 8px;
+	margin: 4px;
+	font-size: 20px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #311700;
+}
+
+/* body */
+
+body {
+	background-color: #311700;
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 60px;
+}
+
+
+.bio {
+	display: block;
+	margin: 5px;
+	color: #ddcfb2;
+	padding: 10px;
+}
+
+.bio-title {
+	margin-left: 10px;
+	
+}
+
+.bio-container {
+	display: flex;
+	margin: 10px;
+}
+
+.bio-container__img {
+	height: 500px;
+	width: 500px;
+	display: flex;
+	margin-right: 10px;
+	align-self: center;
+}
+
+.bio-container__img img{
+}
+
+.bio-container__text {
+	padding: 10px;
+	font-size: 25px;
+}
+
+.footer {
+	display: flex;
+	height: 50px;
+	background-color: #dcceb1;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.footer-container {
+	display: flex;
+	margin: auto;
+	width: 100%;
+	justify-content: space-evenly;
+	font-size: 20px;
+}
+
+.footer-container a {
+	display: flex;
+	text-decoration: none;
+	margin: auto;
+	color: #311700;
+}
+
+.footer-container img {
+	height: 20px;
+	width: 20px;
+	margin: auto;
+	margin-right: 5px;
+
+}
+
+/* Responsive desing */
+
+
+@media only screen and (max-width: 900px){
+
+body	{
+	display: flex;
+	flex-direction: column;
+}
+
+.bio-container {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+
+}
+
+.bio-container__img{
+	height: auto;
+	width: 100%;
+	display: flex;
+	margin-right: 10px;
+
+
+}
+.bio-container__img img{
+	object-fit: cover;
+	max-width: 100%;
+
+}
+}
+
+@media only screen and (max-width: 345px){
+	.nav-container{
+		min-height: 100px;
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.nav {
+		display: flex;
+	}
+
+	.nav ul{
+		flex-direction: column;
+
+	}
+
+}
