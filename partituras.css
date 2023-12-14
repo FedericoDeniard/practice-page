@@ -131,7 +131,7 @@ body	{
 
 }
 
-@media only screen and (max-width: 345px){
+@media only screen and (max-width: 500px){
 	.nav-container{
 		min-height: 100px;
 		flex-wrap: wrap;
