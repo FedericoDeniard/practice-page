@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	box-sizing: border-box; /* Agregado para incluir el padding y el borde en el ancho y alto total */
+	font-family: 'Roboto', sans-serif;
+}
+
+/* nav */
+
+.nav-container{
+	display: flex;
+	background-color: #dcceb1;
+	height: 100px;
+}
+
+.nav {
+	margin: auto;
+	width: 90%;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+
+.nav ul li {
+	padding: 8px;
+	margin: 4px;
+	font-size: 20px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #311700;
+}
+
+/* body */
+
+body {
+	background-color: #311700;
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 60px;
+}
+
+.videos {
+	display: flex;
+	margin: 5px;
+	color: #ddcfb2;
+	padding: 10px;
+	flex-direction: column;
+}
+
+.videos h1 {
+	margin: auto;
+}
+
+.videos-container {
+	height: 100%;
+}
+
+.videos-container__grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.videos-container__grid div {
+	padding: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.videos-container__grid a {
+	text-decoration: none;
+	color: #ddcfb2;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+}
+
+.videos-container__grid a:hover {
+	color: rgba(221, 207, 178, .7);
+}
+
+.gymopedie a:hover,.invierno a:hover, .bach:hover {
+	color: rgba(221, 207, 178, .7);
+	cursor: not-allowed;
+}
+
+.videos-container__grid-video{
+	display: flex;
+	margin: 0;
+	justify-content: center;
+	
+}
+
+.videos-container__grid iframe{
+	justify-content: center;
+	border: none;
+}
+
+
+/* footer */
+
+.footer {
+	display: flex;
+	height: 50px;
+	background-color: #dcceb1;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.footer-container {
+	display: flex;
+	margin: auto;
+	width: 100%;
+	justify-content: space-evenly;
+	font-size: 20px;
+}
+
+.footer-container a {
+	display: flex;
+	text-decoration: none;
+	margin: auto;
+	color: #311700;
+}
+
+.footer-container img {
+	height: 20px;
+	width: 20px;
+	margin: auto;
+	margin-right: 5px;
+
+}
+
+@media only screen and (max-width: 900px){
+
+body	{
+	display: flex;
+	flex-direction: column;
+}
+
+.videos-container__grid div a {
+
+
+}
+
+@media only screen and (max-width: 500px){
+	.nav-container{
+		min-height: 100px;
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.nav {
+		display: flex;
+	}
+
+	.nav ul{
+		flex-direction: column;
+
+	}
+
+.videos-container__grid-video {
+	width: 100%;
+}
+
+.videos-container__grid div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 100%;
+}
