@@ -5,25 +5,21 @@
 	<meta name="description" content="Mi página web donde subo mis experiencias musicales">
 	<meta name="Robots" content="noindex">
 	<meta name="copyright" content="Federico Deniard">
-	<link rel="icon" href="assets/piano.ico">
+	<link rel="icon" href="../../assets/piano.ico">
 	<link rel="stylesheet" type="text/css" href="partituras.css">
 	<title>Partituras - Federico Deniard</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="../../assets/components/nav/topnav.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/components/nav/topnav.css">
+	<script src="../../assets/components/comp-footer/comp-footer.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/components/comp-footer/comp-footer.css">
 </head>
 <body>
 	<header>
-		<div class="nav-container">
-			<nav class="nav">
-				<ul>
-					<li><a class="botonera" href="../index/index.html">INICIO</a></li>
-					<li><a class="botonera" href="partituras.html">PARTITURAS</a></li>
-					<li><a class="botonera" href="../videos/videos.html">VIDEOS</a></li>
-				</ul>
-			</nav>
-		</div>
+		<top-nav></top-nav>
 	</header>
 	<article>
 		<div class="sheets"><h1>Partituras disponibles</h1><br>
@@ -58,11 +54,6 @@
 	</div>
 
 	</article>
-	<div class="footer">
-		<footer class="footer-container">
-			<a href="https://www.instagram.com/fededeniard/" target="_blank"><img src="../../assets/instagram.svg"></img><h4> instagram</h4></a>
-			<a href="https://www.youtube.com/channel/UCtFkBfAWMelIyY9xCVHUprw" target="_blank"><img src="../../assets/youtube.svg"></img><h4>youtube</h4></a>
-		</footer>
-	</div>
+	<comp-footer></comp-footer>	
 </body>
 </html>

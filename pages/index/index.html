@@ -5,25 +5,21 @@
 	<meta name="description" content="Mi página web donde subo mis experiencias musicales">
 	<meta name="Robots" content="noindex">
 	<meta name="copyright" content="Federico Deniard">
-	<link rel="icon" href="assets/piano.ico"> <!-- alojado en drive -->
+	<link rel="icon" href="../../assets/piano.ico">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title>Federico Deniard</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />  
+	<script src="../../assets/components/nav/topnav.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/components/nav/topnav.css">
+	<script src="../../assets/components/comp-footer/comp-footer.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/components/comp-footer/comp-footer.css">
 </head>
 <body>
 	<header>
-		<div class="nav-container">
-			<nav class="nav">
-				<ul>
-					<li><a class="botonera" href="index.html">INICIO</a></li>
-					<li><a class="botonera" href="../partituras/partituras.html">PARTITURAS</a></li>
-					<li><a class="botonera" href="../videos/videos.html">VIDEOS</a></li>
-				</ul>
-			</nav>
-		</div>
+		<top-nav></top-nav>
 	</header>
 	<div class="bio">
 		<h1 class="bio-title">Federico Mateo Deniard</h1><br>
@@ -37,13 +33,6 @@
 				Durante el periodo 2021-2022, tuve el privilegio de formar parte de la Orquesta Escuela de Tango "Semillero Tango Orquesta". Este proyecto no solo enriqueció mi experiencia musical, sino que también me permitió explorar las profundidades del tango, un género que siempre ha capturado mi corazón. Además, junto a un compañero músico, formé el Dúo Hiroko-Deniard, donde asumí la responsabilidad de crear apasionados arreglos de piano y guitarra para acompañar a la voz. Esta experiencia no solo fue un desafío artístico, sino también una oportunidad de compartir la riqueza de la música argentina con otros. Mi viaje musical es una constante evolución, una historia tejida con notas y acordes que reflejan mi amor por la música y mi compromiso con la exploración constante. ¡Bienvenidos a mi mundo musical!
 			</div>
 	</div></article>
-	</div>
-	<div class="footer">
-		<footer class="footer-container">
-			<a href="https://www.instagram.com/fededeniard/" target="_blank"><img src="../../assets/instagram.svg"></img><h4> instagram</h4></a>
-			<a href="https://www.youtube.com/channel/UCtFkBfAWMelIyY9xCVHUprw" target=".blank"><img src="../../assets/youtube.svg"></img><h4>youtube</h4></a>
-		</footer>
-	</div>
-	
+	<comp-footer></comp-footer>	
 </body>
 </html
