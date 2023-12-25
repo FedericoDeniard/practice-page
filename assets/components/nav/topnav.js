@@ -4,7 +4,7 @@ class topNav extends HTMLElement{
     }
     connectedCallback(){
         this.innerHTML = 
-    `
+    `<link rel="stylesheet" type="text/css" href="../../assets/components/nav/topnav.css">
     <div class="nav-container">
         <nav class="nav">
             <ul>
